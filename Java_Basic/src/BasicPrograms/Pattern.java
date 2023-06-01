@@ -30,13 +30,27 @@ public class Pattern {
 			}
 		System.out.println();
 		}
-	
+		
+		System.out.println("Enter the no of rows");
+		int noOfRows2 = scan.nextInt();
+		
+		//pyramid shape pattern
+		for(int i=0;i<=noOfRows2;i++) {
+			for(int j=noOfRows2;j>i;j--) {
+				System.out.print(" ");
+			}
+			for(int j=0;j<i;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		
 		int startNumber = 1;
 		System.out.println("Enter the Limit ");
 		int rowCount = scan.nextInt();
 		
 		for(row=0;row<rowCount;row++) {
-			for(column=0;column<=row;column++) {
+			for(column=0;column<row;column++) {
 				System.out.print(startNumber+ " ");
 				startNumber = startNumber+1;
 			}
